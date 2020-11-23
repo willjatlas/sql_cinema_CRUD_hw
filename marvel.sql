@@ -66,4 +66,15 @@ SELECT * FROM movies;
 -- 6.
 INSERT INTO people (name) VALUES ('Bart Simpson');
 SELECT name FROM people;
-
+-- 7.
+DELETE FROM people WHERE name = 'Eric Cartman';
+SELECT name FROM people;
+-- 8.
+INSERT INTO movies (title, year, show_time) VALUES ('Avengers: Infinity War', 2018, '16:20');
+-- 9.
+SELECT show_time FROM movies WHERE title = 'Iron Man 2';
+UPDATE movies SET show_time = '20:45' WHERE title = 'Iron Man 3';
+SELECT * FROM movies WHERE title = 'Iron Man 3';
+-- Extension.
+DELETE FROM movies WHERE year = 2014 OR year = 2016;
+SELECT * FROM movies;
